@@ -1,124 +1,156 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
+:root{
+    --accient: #fff603;
+    --primary: #ffff;
+    --secondy: #554DF4;
+}
+
+
+
 body{
-    /* background-image: url(/img/pexels-matthardy-3560168.jpg);
+    background-image: url(/img/desktopview.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; */
-    margin: 0;
+}
 
+.container{
+    background-color: rgba(88, 88, 88, 0.47);
+    position: absolute;
+    top: 10vh;
+    left: 13vw;
+    width: 75vw;
+    height: max-content;
+    min-height: 80vh;
+    backdrop-filter: blur(9px);
+    border-radius: 10px;
+}
+
+.heading{
+    /* background-color: red; */
+    position: absolute; 
+    width: 38vw;
+    height: 80vh;
+    left: 0vw;
 }
 
 .form{
-    width: 60vw;
-    /* height: 65vh; */
-    background-color: rgba(16, 76, 165, 0.628);
+    /* background-color: yellow; */
     position: absolute;
-    top: 10vh;
-    left: 20vw;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    padding: 10px 0px 60px 0px;
-    font-size: 20px;
-    padding: 10px;
+    width: 38vw;
+    height: 80vh;
+    right: 0vw;
 }
 
-label>p, span>p{
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    font-size: 30px;
-    font-weight: 900;
+.heading>h1{
+    font-family: sans-serif;
+    font-size: 45px;
+    position: relative;
+    top: 20vh;
+    margin-left: 40px;
+    color: var(--accient);
 }
 
-input{
-    width: 40vw;
+.heading>p{
+    font-family: sans-serif;
     font-size: 20px;
-    font-weight: 900;
-    height: 5vh;
+    position: relative;
+    top: 20vh;
+    margin-left: 40px;
+    color: var(--primary);
+    
+}
+
+.social-logo{
+    /* background-color: green; */
+    position: absolute;
+    bottom: 5vh;
+    margin-left: 40px;
+}
+
+.social-logo>a{
+    text-decoration: none;
+}
+
+.fb-ico{
+    width: 35px;
+    margin-right: 10px;
+    background-color: white;
     border-radius: 5px;
-    text-align: center;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.301);
-    color: white;
-
 }
 
-
+.lnkdn-ico{
+    width: 35px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
 
 select{
-    width: 40vw;
-    font-size: 20px;
-    font-weight: 900;
-    height: 5vh;
-    border-radius: 5px;
-    text-align: center;
-    border: none;
+    width: 12.4vw;
+}
+
+input, select, textarea {
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    border-left: none;
+    border-right: none;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    display: block;
+    width: 25vw;
+    height: 6vh;
+    position: relative;
+    left: 7vw;
+    background-color: rgba(255, 255, 255, 0);
     outline: none;
-    background-color: rgba(255, 255, 255, 0.324);
-    color: grey;
+    font-size: larger;
+    color: white;
+    /* color: var(--secondy); */
+    resize: none;
+    
 }
 
 option{
-    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder{
+    color: white;
 }
 
 textarea{
-    width: 35vw;
-    font-size: 20px;
-    text-align: center;
-    height: 20vh;
-    resize: none;
-    background-color: rgba(255, 255, 255, 0.451);
-    outline: none;
-    border-radius: 10px;
+    height: 25vh;
 }
 
-button{
-    width: 30vw;
-    height: 5vh;
+.btn-sub{
+    width: 180px;
+    height: 40px;
     border-radius: 10px;
     border: none;
-    outline: none;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.438);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.205);
+    position: relative;
+    left: 13vw;
 }
 
-#send-input{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    /* background-color: red; */
+/* Hover Effect */
+
+input:focus, select:focus, textarea:focus{
+    transition-duration: 300ms;
+    border-top: 2px solid var(--secondy);
+    border-bottom: 2px solid var(--secondy);
 }
 
-
-
-input:hover, select:hover, textarea:hover{
-    background-color: green;
-}
-
-.preview{
-    display: none;
-    background-color: blueviolet;
-    width: 50vw;
-    height: 40vh;
-    position: absolute;
-    top: 30vh;
-    left: 20vw;
-    font-size: 20px;
+.btn-sub:hover{
+    transition: 300ms;
+    background-color: var(--accient);
+    color: black;
+    font-family: arial;
+    font-size: 15px;
     font-weight: 900;
 }
-
-
-
-
-
-
-

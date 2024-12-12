@@ -5,58 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conect with Saidur Rahman!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="" method="post" class="form">
-        <h1>
-            hello please fill up your form and send it to us
-        </h1>
-        <br>
-        <br>
-        <label for="name" class="form-name">
-            <p>Enter your name:</p>
-            <input type="text" name="name" id="name-value" placeholder="Name">
-        </label>
-        <br>
-        <br>
-        <label for="email" class="form-email">
-            <p>Enter your email:</p>
-            <input type="email" name="email" id="email-value" placeholder="email">
-        </label>
-        <br>
-        <br>
-        <label for="Service" class="form-service">
-            <p>Select your service</p>
-            <select id="service-value">
-                <option value="None">None</option>
-                <option value="webdev">WebDev</option>
-            </select>
-        </label>
-        <br>
-        <br>
-        <span for="messege" class="form-messege">
-            <p>Enter your messege:</p>
-            <textarea name="messege" id="" cols="30" rows="5" placeholder="Your messege" maxlength="200" id="messege-value"></textarea>
-        </span>
-        <br>
-        <br>
-        <button type="submit" onclick="previewdisplay()">Send</button>
-    </form>
-
-    <div class="preview" id="preview-display">
-
-        <p>your name is: <input type="text" name="" id="confirm-name" readonly></p>
-        <p>your email is: <input type="email" name="" id="confirm-email" readonly></p>
-        <p>your service is: <input type="text" name="" id="confirm-service" readonly></p>
-        <p a>your messege is: <textarea name="" id="confirm-messege" cols="30" rows="10" readonly></textarea></p>
-
-
+    <div class="container">
+        <div class="heading">
+            <h1>Conncet with Saidur!</h1>
+            <p>Entreprenuer, Web Developer</p>
+            <div class="social-logo">
+                <a href="http://" target="_blank">
+                    <img src="/img/facebook-logo.png" alt="Facebook" srcset="" class="fb-ico">
+                </a>
+                <a href="http://" target="_blank" >
+                    <img src="img/linkedin.png" alt="Linkedin" srcset="" class="lnkdn-ico">
+                </a>
+            </div>
+        </div>
+        <div class="form">
+            <form action="https://formspree.io/f/xwpkjyqj" method="post">
+                <input type="text" name="user-name" id="name-value" placeholder="Name" maxlength="20">
+                <input type="email" name="user-email" id="email-value" placeholder="Email" maxlength="30">
+                <select name="service" id="service-value">
+                    <option value="web-app">Request for building a Web App</option>
+                    <option value="web-react">Request for building a React App</option>
+                </select>
+                <textarea name="user-messege" id="messege-value" cols="30" rows="10" maxlength="300" placeholder="Messege"></textarea>
+                <!-- <input type="text" name="user-messege" id="messege-value" placeholder="Messege"> -->
+                
+                <button type="submit" id="send-btn-value" class="btn-sub" >Send Messege!</button>
+            </form>
+        </div>
     </div>
-
-    <script src="/script.js"></script>
 </body>
 
 </html>
