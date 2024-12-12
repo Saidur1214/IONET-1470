@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="temp/layout.css">
-    <link rel="stylesheet" href="temp/mediaquaries.css">
-    <link rel="stylesheet" href="temp/utilites.css">
-    <link rel="stylesheet" href="temp/variable.css">
-    <link rel="stylesheet" href="temp/font.css">
-    <link rel="stylesheet" href="temp/general.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
+    <form action="" method="post" class="form">
+        <h1>
+            hello please fill up your form and send it to us
+        </h1>
+        <br>
+        <br>
+        <label for="name" class="form-name">
+            <p>Enter your name:</p>
+            <input type="text" name="name" id="name-value" placeholder="Name">
+        </label>
+        <br>
+        <br>
+        <label for="email" class="form-email">
+            <p>Enter your email:</p>
+            <input type="email" name="email" id="email-value" placeholder="email">
+        </label>
+        <br>
+        <br>
+        <label for="Service" class="form-service">
+            <p>Select your service</p>
+            <select id="service-value">
+                <option value="None">None</option>
+                <option value="webdev">WebDev</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <span for="messege" class="form-messege">
+            <p>Enter your messege:</p>
+            <textarea name="messege" id="" cols="30" rows="5" placeholder="Your messege" maxlength="200" id="messege-value"></textarea>
+        </span>
+        <br>
+        <br>
+        <button type="submit" onclick="previewdisplay()">Send</button>
+    </form>
 
-    <main class="main"></main>
-    <section class="section1"></section>
-    <article class="article1"></article>
-    <aside class="asidebar1"></aside>
-    <footer class="footer"></footer>
+    <div class="preview" id="preview-display">
 
-    <script scr="script.js"></script>
+        <p>your name is: <input type="text" name="" id="confirm-name" readonly></p>
+        <p>your email is: <input type="email" name="" id="confirm-email" readonly></p>
+        <p>your service is: <input type="text" name="" id="confirm-service" readonly></p>
+        <p a>your messege is: <textarea name="" id="confirm-messege" cols="30" rows="10" readonly></textarea></p>
+
+
+    </div>
+
+    <script src="/script.js"></script>
 </body>
+
 </html>
